@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Packs -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">    
+    <link rel="stylesheet" href="../SefeniWeb V2/css/styles.css">
+
+    <title>SefeniCode</title>
+    <link rel="shortcut icon" href="../SefeniWeb V2/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="whatsapp-button">
+        <a id="btnWhatsApp" href="https://wa.me/543572550116?text=Hola,%20me%20interesa%20saber%20más%20sobre%20sus%20servicios." target="_blank">
+          <img src="images/whatsapp-logo.png" alt="WhatsApp">
+        </a>
+      </div>
+    <header>
+        <a href="index.html"><img src="images/logo.png" alt="Logo-Data"></a>
+        <a class="hideInMobile" href="https://wa.me/543572550116" target="_blank">CONTACTO</a>
+    </header>
+    <section id="carousel" >
+        <div id="carouselImagenes" class="carousel slide hideInMobile" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselImagenes" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselImagenes" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselImagenes" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img  src="images/index-1-slider-1-1920x768.jpg" class="d-block w-100" alt="slider-index-1">
+                <div class="carousel-caption">
+                  <h1><span style="font-weight: bold;">Desarrollo Web</span> <br><span style="font-weight: 100;">& Diseño</span></h1> <br>
+                  <p style="font-weight: bold;">Brillando a cada paso.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="images/index-1-slider-2-1920x768.jpg" class="d-block w-100" alt="slider-index-2">
+                <div class="carousel-caption">
+                    <h1><span style="font-weight: bold;">Web API</span> <br><span style="font-weight: 100;">Soluciones Innovadoras <br> para su Empresa.</span></h1> <br>
+                    <p style="font-weight: bold;">Ahorre tiempo con nuestras tecnologias.</p>
+                  </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="images/index-1-slider-3-1920x768.jpg" class="d-block w-100" alt="slider-index-3">
+                <div class="carousel-caption">
+                    <h1><span style="font-weight: bold;">Mantenimiento Web</span> <br><span style="font-weight: 100;">Despreocupate, nosotros <br> nos encargamos.</span></h1> <br>
+                    <p style="font-weight: bold;">Soporte completo 24 horas al día,<br> los 7 días de la semana.</p>
+                  </div>
+              </div>
+            </div>
+
+          </div>
+          <div id="carouselImagenesMobile" class="carousel slide hideInPC" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselImagenesMobile" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselImagenesMobile" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselImagenesMobile" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img id="img-slider-header-1" src="images/index-1-slider-1-430x932-mobile.jpg" class="d-block w-100" alt="slider-index-1">
+                <div class="carousel-caption">
+                  <h1><span style="font-weight: bold;">Desarrollo Web</span> <br><span style="font-weight: 100;">& Diseño</span></h1> 
+                  <p style="font-weight: bold;">Brillando a cada paso.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="images/index-1-slider-2-430x932-mobile.jpg" class="d-block w-100" alt="slider-index-2">
+                <div class="carousel-caption">
+                    <h1><span style="font-weight: bold;">Web API</span> <br><span style="font-weight: 100;">Soluciones Innovadoras.</span></h1> <br>
+                    <p style="font-weight: bold;">Ahorre tiempo con nuestras tecnologias.</p>
+                  </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="images/index-1-slider-3-430x932-mobile.jpg" class="d-block w-100" alt="slider-index-3">
+                <div class="carousel-caption">
+                    <h1><span style="font-weight: bold;">Mantenimiento Web</span> <br><span style="font-weight: 100;">Nos encargamos.</span></h1> <br>
+                    <p style="font-weight: bold;">Soporte completo 24 horas al día,<br> los 7 días de la semana.</p>
+                  </div>
+              </div>
+            </div>
+
+          </div>
+    </section>
+    <section id="parallax-section" class="hideInMobile">
+        <div class="parallax-content">
+            <div style="text-align: center;">
+                <h1><span style="font-weight: bold; color: white;">Bienvenido a <span style="color: red;">Sefeni</span></span><span style="color: white; font-weight: 100;">Code</span></h1>
+            </div>
+            <div>
+                <h4 style="color: white;">Donde la innovación y la dedicación se encuentran para crear un futuro brillante.</h4>
+            </div>
+        </div>
+    </section>
+    <section id="mision-vision" >
+        <div  class="div-mv izquierda">
+            <div>
+                <h2 ><i class="bi bi-bullseye"></i> <span class="font-bold">Nuestra <span class="font-light">Mision</span></span></h2><br>
+                <p class="txtFont" >Nuestra misión es brindar servicios de desarrollo e innovacion de calidad superior. La atención personalizada y receptiva que brindamos a cada cliente, sin importar cuán grande o pequeño sea, es la clave de nuestro enfoque.</p> <br>
+                <ul class="ul-check hideInMobile">
+                    <li> <i class="bi bi-check-circle"></i>Proporcionar desarrollos intuitivos y flexibles.</li>
+                    <li> <i class="bi bi-check-circle"></i>Ofreciendo pleno apoyo a todas nuestros clientes.</li>
+                </ul>
+            </div>
+            <div style="text-align: center;">
+                <img  src="images/mision.png" alt="handsOk">
+            </div>
+        </div>
+        <div class="div-mv derecha">
+            <div>
+                <h2 ><i class="bi bi-eye"></i> <span class="font-bold">Nuestra <span class="font-light">Vision</span></span></h2><br>
+                <p class="txtFont" >Ser el líder en desarrollo e innovación tecnológica, reconocido por nuestra capacidad de transformar ideas en soluciones excepcionales que superen las expectativas de nuestros clientes. Nos esforzamos por ser el socio preferido por nuestra dedicación a la excelencia, la innovación continua y un enfoque personalizado que impulsa el éxito y el crecimiento sostenido de cada cliente.</p> <br>
+            </div>
+            <div style="text-align: center;">
+                <img  src="images/vision.png" alt="vision">
+            </div>
+        </div>
+    </section>
+    <section id="servicios">
+        <div id="div-servicios" >
+            <h2 ><i class="bi bi-hand-thumbs-up"></i> <span class="font-bold">Nuestros <span class="font-light">Servicios</span></span></h2><br>
+            <div id="div-info-diseno" class="div-sv" >
+                <div class="service-in izquierda hideInMobile">
+                    <img src="images/service-2-580x334.jpg" alt="">
+                </div>
+                <div class="service-in p-3 derecha" >
+                    <h4 class="font-bold" style="color: rgb(0, 89, 255);">Diseño Web Innovador y Atractivo</h4><br>
+                    <div class="d-flex align-items-center">
+                        <p class="font-light" >Entendemos que el diseño web no es solo una cuestión de estética, sino una parte fundamental de la experiencia del usuario y del éxito de tu negocio en el entorno digital. Nuestro enfoque hacia el diseño web combina creatividad, funcionalidad y tecnología de punta para ofrecer sitios web que no solo capturan la esencia de tu marca, sino que también proporcionan una experiencia intuitiva y envolvente para tus usuarios.</p>
+                    </div> <br>
+                    <h5 class="font-bold" style="color: rgba(255, 0, 0, 0.438);">"El diseño es el intermediario entre la información y el entendimiento."</h5>
+                    <p class="font-light">Hans Hofmann</p>
+                </div>
+            </div>
+            <div id="div-info-desarrollo" class="div-sv " >
+                <div class="service-in p-3 izquierda" >
+                    <h4 class="font-bold" style="color: rgb(0, 89, 255);">Desarrollo Web de Alto Impacto</h4><br>
+                    <div class="d-flex align-items-center">
+                        <p class="font-light" >El desarrollo web es mucho más que codificación: es el arte de construir experiencias digitales que cumplen con los más altos estándares de calidad y rendimiento. Nos especializamos en crear soluciones web robustas, escalables y a medida que no solo satisfacen las necesidades de nuestros clientes, sino que también superan sus expectativas.</p>
+                    </div> <br>
+                    <h5 class="font-bold" style="color: rgba(255, 0, 0, 0.438);">"El arte desafía a la tecnología, y la tecnología inspira al arte."</h5>
+                    <p class="font-light">John Lasseter</p>
+                </div>
+                <div class="service-in derecha hideInMobile">
+                    <img src="images/service-1-586x334.jpg" alt="">
+                </div>
+            </div>
+            <div id="div-info-api" class="div-sv " >
+                <div class="service-in izquierda hideInMobile">
+                    <img src="images/service-3-580x334.jpg" alt="">
+                </div>
+                <div class="service-in p-3 derecha" >
+                    <h4 class="font-bold" style="color: rgb(0, 89, 255);">Creación y Desarrollo de Web APIs: Conectando tu Mundo Digital</h4><br>
+                    <div class="d-flex align-items-center">
+                        <p class="font-light" >Entendemos que la eficiencia y la flexibilidad son esenciales en el mundo digital actual. La creación y desarrollo de Web APIs es una de nuestras especialidades, y estamos comprometidos en diseñar soluciones que faciliten la integración, la interoperabilidad y la expansión de tus sistemas y servicios.</p>
+                    </div> <br>
+                    <h5 class="font-bold" style="color: rgba(255, 0, 0, 0.438);">"La tecnología permitirá 'Hackear' a seres humanos."</h5>
+                    <p class="font-light">Yuval Noah Harari</p>
+                </div>
+            </div>
+            <div id="div-info-mantenimiento" class="div-sv " >
+                <div class="service-in p-3 izquierda" >
+                    <h4 class="font-bold" style="color: rgb(0, 89, 255);">Mantenimiento Web: Asegurando la Excelencia Continua de tu Presencia Digital</h4><br>
+                    <div class="d-flex align-items-center">
+                        <p class="font-light" >El mantenimiento web es fundamental para garantizar que tu sitio web funcione sin problemas, se mantenga seguro y evolucione de acuerdo con las necesidades cambiantes de tu negocio. Nuestro servicio de mantenimiento web está diseñado para ofrecerte tranquilidad y permitirte concentrarte en lo que mejor sabes hacer: hacer crecer tu negocio.</p>
+                    </div> <br>
+                    <h5 class="font-bold" style="color: rgba(255, 0, 0, 0.438);">"La clave para el exito de la organizacion es el mantenimiento."</h5>
+                    <p class="font-light">Anonimo</p>
+                </div>
+                <div class="service-in derecha hideInMobile">
+                    <img src="images/service-1-586x334.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="clientes-contactos">
+        <div id="clients-contact" >
+            <div class="div-cc hideInMobile">
+                <h2 ><i class="bi bi-people-fill"></i> <span class="font-bold">Algunos <span class="font-light">Clientes</span></span></h2><br>
+                <div class="brand-grid">
+                    <a href="https://ferreteriacasanoves.com.ar" target="_blank"><img src="images/brand-1-144x70.png" alt="Image 1"></a>
+                    <a href="https://casanoves.com.ar" target="_blank"><img src="images/brand-2-144x70.png" alt="Image 2"></a>
+                    <a href="https://dereventa.com.ar" target="_blank"><img src="images/brand-3-144x70.png" alt="Image 3"></a>
+                </div>
+                <div class="brand-grid">
+                    <a href="https://eureka.ar" target="_blank"><img src="images/brand-4-144x70.png" alt="Image 1"></a>
+                    <a href="https://construon.com.ar" target="_blank"><img src="images/brand-5-144x70.png" alt="Image 2"></a>
+                    <a href="https://rodadospesados.com.ar" target="_blank"><img src="images/brand-6-144x70.png" alt="Image 2"></a>
+                </div>
+            </div>
+            <div class="div-cc">
+                <h2 ><i class="bi bi-megaphone"></i> <span class="font-bold">Contactate <span class="font-light hideInMobile">con Nosotros</span></span></h2><br>
+                <div id="formulario-contenido" class="imgContenido">
+                    <div class="container"  >
+                        <form action="https://formspree.io/f/xldrnogo" method="POST" style="text-align: left;">
+                            <div class="mb-3">
+                              <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
+                            </div>
+                            <div class="mb-3">
+                              <input type="text" class="form-control" id="ciudad" name="ciudad" placeholder="Ciudad" required>
+                            </div>
+                            <div class="mb-3">
+                              <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="mb-3">
+                              <textarea class="form-control" id="consulta" name="consulta" rows="3" placeholder="Escriba su consulta aquí" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-header">Enviar</button>
+                          </form>
+                    </div>
+                  
+                  </div>
+            </div>
+        </div>
+    </section>
+    <footer >
+        <div class="sub-footer" >
+            <span class="font-bold">Powered By <a href="https://www.sefenicode.com">Sefeni<span class="font-light" style="color: white;">Code</span></a></span> <span class="font-bold">&copy;&nbsp;</span> 
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="js/animated.js"></script>
+    <script src="js/js.js"></script>
+
+</body>
+</html>

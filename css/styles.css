@@ -1,0 +1,675 @@
+@media (max-width: 600px) {
+    body {
+        background-color: aliceblue;    
+        overflow: scroll;
+    }
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3%;
+        background-color: rgba(0, 0, 0, 0.363);
+        z-index: 1000;
+    }
+
+    #carousel {
+        width: 100%;
+        height: 100vh;
+    }
+    .carousel-caption {
+        font-size: 150%;
+        text-align: left;
+        position: absolute; /* Cambia de 'fixed' a 'absolute' para que se posicione relativo al contenedor */
+        top: 10%; /* Posiciona los indicadores en la parte inferior */
+        left: 10%; /* Posiciona los indicadores a la izquierda */
+        right: auto; /* Asegura que no se centre */
+        animation: fadeInUp 1s ease-in-out; /* 1 segundo de duración de la animación */
+        opacity: 0; /* Inicia oculto */
+        animation-fill-mode: forwards; /* Mantiene el estado final de la animación */
+    }
+
+    .carousel-caption h1 {
+        font-size: 150%;
+    }
+
+    /* Animación para el efecto de subir y desvanecerse */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px); /* Empieza 50px hacia abajo */
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0); /* Termina en su posición normal */
+            }
+        }
+
+    .carousel-indicators {
+        position: absolute; /* Cambia de 'fixed' a 'absolute' para que se posicione relativo al contenedor */
+        bottom: 0; /* Posiciona los indicadores en la parte inferior */
+        left: 0; /* Posiciona los indicadores a la izquierda */
+        right: auto; /* Asegura que no se centre */
+    }
+
+    #carouselImagenesMobile {
+        display: block;
+    }
+
+    .hideInMobile {
+        display: none;
+    }
+
+        /* Estilos para el botón de WhatsApp */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1001;
+          }
+        
+          .whatsapp-button img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out;
+          }
+        
+          .whatsapp-button img:hover {
+            transform: scale(1.1);
+          }
+
+          #mision-vision {
+            overflow: hidden;
+            position: relative;
+            background-color: white;
+            width: 100%;
+            height: auto;
+          }
+
+          #mision-vision h2{
+            font-size: 250%;
+          }
+          .div-mv {
+            text-align: center;
+            padding: 10%;
+
+        }
+    
+        .div-mv div {
+            width: 100%;
+            height: auto;
+        }
+    
+        .div-mv img {
+            width: 55%;
+            height: 55%;
+        }
+
+        
+    .font-bold {
+        font-weight: bold;
+    }
+
+    .font-light {
+        font-weight: 100;
+    }
+
+    /* Inicialmente fuera de pantalla y oculto */
+    .izquierda, .derecha {
+        opacity: 0;
+        transform: translateX(-100%); /* Para izquierda */
+        transition: opacity 0.5s ease-in-out, transform 1s ease-in-out;
+    }
+    
+    .derecha {
+        transform: translateX(100%); /* Para derecha */
+    }
+    
+    /* Estado animado */
+    .visible .izquierda {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    .visible .derecha {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    #div-servicios{
+        background-color: aliceblue;    
+        text-align: center;
+        padding: 3%;
+        overflow: hidden;
+        position: relative;
+    }
+    #div-servicios h2{
+        
+        font-size: 250%;
+
+    }
+
+
+    .div-sv {
+        width: 100%;
+        height: auto;
+        background-color: aliceblue;    
+        display: flex;
+        justify-content: center;
+    }
+
+    .div-sv div {
+         width: 100%;
+         height: auto;
+    }
+
+    .sub-footer {
+        font-size: 150%;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.884);
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      } 
+    
+      .sub-footer a {
+        color: red;
+        text-decoration: none;
+      }
+
+      #clients-contact {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3%;
+      } 
+
+      #clients-contact h2{
+        font-size: 250%;
+      }
+
+
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    body {
+        background-color: aliceblue;    
+        overflow: scroll;
+    }
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3%;
+        background-color: rgba(0, 0, 0, 0.363);
+        z-index: 1000;
+    }
+
+    #carousel {
+        width: 100%;
+        height: 100vh;
+    }
+    .carousel-caption {
+        font-size: 150%;
+        text-align: left;
+        position: absolute; /* Cambia de 'fixed' a 'absolute' para que se posicione relativo al contenedor */
+        top: 10%; /* Posiciona los indicadores en la parte inferior */
+        left: 10%; /* Posiciona los indicadores a la izquierda */
+        right: auto; /* Asegura que no se centre */
+        animation: fadeInUp 1s ease-in-out; /* 1 segundo de duración de la animación */
+        opacity: 0; /* Inicia oculto */
+        animation-fill-mode: forwards; /* Mantiene el estado final de la animación */
+    }
+
+    .carousel-caption h1 {
+        font-size: 150%;
+    }
+
+    /* Animación para el efecto de subir y desvanecerse */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px); /* Empieza 50px hacia abajo */
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0); /* Termina en su posición normal */
+            }
+        }
+
+    .carousel-indicators {
+        position: absolute; /* Cambia de 'fixed' a 'absolute' para que se posicione relativo al contenedor */
+        bottom: 0; /* Posiciona los indicadores en la parte inferior */
+        left: 0; /* Posiciona los indicadores a la izquierda */
+        right: auto; /* Asegura que no se centre */
+    }
+
+    #carouselImagenesMobile {
+        display: block;
+    }
+
+    .hideInMobile {
+        display: none;
+    }
+
+        /* Estilos para el botón de WhatsApp */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1001;
+          }
+        
+          .whatsapp-button img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out;
+          }
+        
+          .whatsapp-button img:hover {
+            transform: scale(1.1);
+          }
+
+          #mision-vision {
+            overflow: hidden;
+            position: relative;
+            background-color: white;
+            width: 100%;
+            height: auto;
+          }
+
+          #mision-vision h2{
+            font-size: 250%;
+          }
+          .div-mv {
+            text-align: center;
+            padding: 10%;
+
+        }
+    
+        .div-mv div {
+            width: 100%;
+            height: auto;
+        }
+    
+        .div-mv img {
+            width: 55%;
+            height: 55%;
+        }
+
+        
+    .font-bold {
+        font-weight: bold;
+    }
+
+    .font-light {
+        font-weight: 100;
+    }
+
+    /* Inicialmente fuera de pantalla y oculto */
+    .izquierda, .derecha {
+        opacity: 0;
+        transform: translateX(-100%); /* Para izquierda */
+        transition: opacity 0.5s ease-in-out, transform 1s ease-in-out;
+    }
+    
+    .derecha {
+        transform: translateX(100%); /* Para derecha */
+    }
+    
+    /* Estado animado */
+    .visible .izquierda {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    .visible .derecha {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    #div-servicios{
+        background-color: aliceblue;    
+        text-align: center;
+        padding: 3%;
+        overflow: hidden;
+        position: relative;
+    }
+    #div-servicios h2{
+        
+        font-size: 250%;
+
+    }
+
+
+    .div-sv {
+        width: 100%;
+        height: auto;
+        background-color: aliceblue;    
+        display: flex;
+        justify-content: center;
+    }
+
+    .div-sv div {
+         width: 100%;
+         height: auto;
+    }
+
+    .sub-footer {
+        font-size: 150%;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.884);
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      } 
+    
+      .sub-footer a {
+        color: red;
+        text-decoration: none;
+      }
+
+      #clients-contact {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3%;
+      } 
+
+      #clients-contact h2{
+        font-size: 250%;
+      }
+
+      
+}
+
+@media (min-width: 1024px) {
+
+    body {
+        background-color: aliceblue;    
+    }
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3%;
+        background-color: rgba(0, 0, 0, 0.322);
+        z-index: 1000; /* Para asegurarse de que esté por encima de otros elementos */
+
+    }
+
+    header a {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    header a:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    #carousel {
+        width: 100%;
+        height: 100vh;
+    }
+
+    #carousel img{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .carousel-caption {
+        font-size: 150%;
+        text-align: left;
+        position: absolute; /* Cambia de 'fixed' a 'absolute' para que se posicione relativo al contenedor */
+        top: 30%; /* Posiciona los indicadores en la parte inferior */
+        left: 10%; /* Posiciona los indicadores a la izquierda */
+        right: auto; /* Asegura que no se centre */
+        animation: fadeInUp 1s ease-in-out; /* 1 segundo de duración de la animación */
+        opacity: 0; /* Inicia oculto */
+        animation-fill-mode: forwards; /* Mantiene el estado final de la animación */
+    }
+
+    .carousel-caption h1 {
+        font-size: 200%;
+    }
+
+    /* Animación para el efecto de subir y desvanecerse */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px); /* Empieza 50px hacia abajo */
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0); /* Termina en su posición normal */
+            }
+        }
+
+    .carousel-indicators {
+        position: absolute; /* Cambia de 'fixed' a 'absolute' para que se posicione relativo al contenedor */
+        bottom: 5vh; /* Posiciona los indicadores en la parte inferior */
+        left: 0; /* Posiciona los indicadores a la izquierda */
+        right: auto; /* Asegura que no se centre */
+    }
+
+    #parallax-section {
+        height: 50vh;
+        background-image: url('../images/parallax-1-1920x1026.jpg'); /* Reemplaza con la URL de tu imagen */
+        background-attachment: fixed; /* Clave para el efecto parallax */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    /* Contenido centrado */
+    .parallax-section .parallax-content {
+        text-align: center;
+        color: white; /* Cambia el color según tu fondo */
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Sombra para mejorar la legibilidad */
+    }
+
+    #mision-vision{
+        background-color: white;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+    }
+
+    .div-mv {
+        width: 50%;
+        height: 100vh;
+        padding: 3%;
+    }
+
+    .div-mv div {
+        width: 100%;
+        height: auto;
+    }
+
+    .div-mv img {
+        width: 55%;
+        height: 55%;
+    }
+
+    #div-servicios{
+        padding: 3%;
+        background-color: aliceblue;    
+
+    }
+    .div-sv {
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin: 1%;
+    }
+
+    .div-sv div {
+        width: 100%;
+        height: auto;
+    }
+
+    .div-sv img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .service-in {
+        text-align: center;
+    }
+
+    .font-bold {
+        font-weight: bold;
+    }
+
+    .font-light {
+        font-weight: 100;
+    }
+
+    .txtFont {
+        font-size: 125%;
+    }
+
+    .ul-check {
+        list-style-type: none; /* Elimina los puntos por defecto de la lista */
+    }
+    
+    .ul-check li {
+        font-size: 125%;
+        font-weight: bold;
+    }
+    
+    .ul-check li i {
+        margin-right: 4px; /* Espacio entre el ícono y el texto */
+        font-size: 125%;
+        font-weight: bold;
+        color: #ff0000; /* Color del ícono */
+    }
+
+/* Inicialmente fuera de pantalla y oculto */
+.izquierda, .derecha {
+    opacity: 0;
+    transform: translateX(-100%); /* Para izquierda */
+    transition: opacity 0.5s ease-in-out, transform 1s ease-in-out;
+  }
+  
+  .derecha {
+    transform: translateX(100%); /* Para derecha */
+  }
+  
+  /* Estado animado */
+  .visible .izquierda {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .visible .derecha {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .sub-footer {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.884);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  .sub-footer a {
+    color: red;
+    text-decoration: none;
+  }
+
+
+  .brand-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas, cada una ocupando un tercio del ancho */
+    gap: 10px; /* Opcional: espacio entre imágenes */
+  }
+  
+  .brand-grid img {
+    width: 100%; /* La imagen ocupa el 100% del ancho de su celda */
+    height: auto; /* Mantiene la proporción de la imagen */
+
+  }
+
+  .brand-grid a:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  #clients-contact {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+  } 
+
+
+  .div-cc {
+    z-index: 1000;
+    width: 50%;
+    height: auto;
+    padding: 3%;
+}
+
+    .hideInPC {
+        display: none;
+    }
+
+        /* Estilos para el botón de WhatsApp */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1001;
+          }
+        
+          .whatsapp-button img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out;
+          }
+        
+          .whatsapp-button img:hover {
+            transform: scale(1.1);
+          }
+
+        
+}
